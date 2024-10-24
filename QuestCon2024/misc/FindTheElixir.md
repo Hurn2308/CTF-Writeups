@@ -1,7 +1,7 @@
-#Find the Elixer -180 
+# Find the Elixer -180 
 To save the people from the Asuras, the gods send forth the Elixir of immortality. But the Asura, who calls himself iamkali3x3, has stolen the Elixir and infused it with his dark powers into it, corrupting its essence. Now, it is up to you to uncover the original Elixir and restore balance before chaos reigns. (OSINTxCrypto)
 
-#Solution
+# Solution
 Reading through the challenge description first thing to note was in the challenge description the "Asura" is named "iamkali3x3" so immediately I used sherlock to get all websites that have a user named iamkali3x3. A github user registered with the same name was one of the results of sherlock so I visited the page to see if there was any important information. Upon checking the user's profile there are two repositories, one named pandoras-box the other named hermes key.
 ![image](https://github.com/user-attachments/assets/e3a1a2ab-3dfd-4a5b-a335-a6fb902ac869)
 
