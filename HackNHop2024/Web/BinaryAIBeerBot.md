@@ -9,7 +9,6 @@ At the double line its lower frequency than single line so we can assume double 
 ![image](https://github.com/user-attachments/assets/9cfce0c2-2d5f-4aae-a2f9-6d7f72023d29)
 
 Going to the website its a page that turns text into binary and then into .wav file to download that you can use to communicate with the bot.
-![image](https://github.com/user-attachments/assets/9ae684b0-4704-496a-804b-994074db798f)
 ![image](https://github.com/user-attachments/assets/abf02d78-2c19-40f2-9f03-336247992106)
 
 yay! :D
