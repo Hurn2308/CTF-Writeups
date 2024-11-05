@@ -3,6 +3,7 @@
 
 # Solution
 The site is like so:
+
 ![image](https://github.com/user-attachments/assets/94e877f4-270a-4af6-9108-c394a230cac1)
 
 After you enter fake details to test how it accepts the data you will get a response such as this:
