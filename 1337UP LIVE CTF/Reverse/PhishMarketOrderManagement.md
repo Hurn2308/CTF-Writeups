@@ -74,23 +74,29 @@ In the server, we are given a 4 options 2 of which are irrelevant which you can 
 ![image](https://github.com/user-attachments/assets/53b86299-c12c-400c-9a3e-82a91243b319)
 
 Looking at the source code and the init-db.sql file we can tell that the rest of this challenge is an SQL injection to get the content of the admin table which houses the flag. 
+
 ![image](https://github.com/user-attachments/assets/dd6ef5a5-ca5e-472c-a9cf-897737ccac8a)
 
 At first I tested on the Orders function but no matter what injection I gave it returned this error which I figured meant that it was validating and checking for any ' symbol which meant this was not the injection point so I tried the Products function instead:
+
 ![image](https://github.com/user-attachments/assets/e2214c07-2e89-4dd2-bc4c-6ef3ba4cede3)
 
 To test my theory I injected a simple injection to see if this is the injection point. The payload `admin' AND (SELECT 1 FROM admin LIMIT 1) = 1; --` gave an error that said "--" is not allowed. So I tested an injection that used # to comment out instead. 
+
 ![image](https://github.com/user-attachments/assets/d0bfbe22-86e4-4f3a-aef6-19771ed24272)
 
 There was no query results but the injection was valid and went through the server so from here I knew the structure of the payload which needed #. Next I tried to use UNION to get the data from the admin table with this payload `admin' UNION SELECT 1, username, flag FROM admin; # `
+
 ![image](https://github.com/user-attachments/assets/6db65deb-6eee-4287-978b-efac9684762c)
 
 I only realized this a bit later but seeing that the flag column value can't be printed I realized later it was due to the fact the product table price column is using the decimal format so the string of the flag can't be printed on the price column it needs to be on the name column. Thus we can now create our payload for the solution.
+
 ![image](https://github.com/user-attachments/assets/5c5996bf-14c1-4026-881c-830c7cf84f1e)
 
 
 # Solution
 So the solution is to inject a payload that will replace the name value of the product table with the value of the flag. To do this I just asked GPT to generate the payload for me that will follow the criteria of the SQL database which was `' OR 1=1 UNION SELECT flag, 0 FROM admin; #`
+
 ![image](https://github.com/user-attachments/assets/1edf0773-6ec6-4edf-9424-5c7a874061ea)
 
 #L337upCTF2024 
