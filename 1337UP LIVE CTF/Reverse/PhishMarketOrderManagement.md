@@ -11,7 +11,9 @@ Initially running the program it will expect a password, so the first step of th
 ![image](https://github.com/user-attachments/assets/dfe1c2df-c42f-4f99-8361-260fb0fe0f20)
 
 To do this we can inspect the source code as it is provided within the challenge. In the source code, we can see there is a check for the password in sub_3593
-![[Pasted image 20241117015033.png]]
+
+![image](https://github.com/user-attachments/assets/98f2bdb7-de7b-4b89-9668-9554d7dbd4fc)
+
 This function is more of the password comparison function where it just checks if the inputted password is the same length as the expected password and etc. The logic in which we can use to decipher the password is in function sub_34C9.
 ```
 _QWORD *__fastcall sub_34C9(_QWORD *a1)
