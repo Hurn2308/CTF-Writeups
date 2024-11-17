@@ -8,7 +8,8 @@ INTIGRITI{w3b_ch4ll3n63_1n_d156u153}
 
 # Analysis
 Initially running the program it will expect a password, so the first step of this challenge is to find out what is the password.
-![image](https://github.com/user-attachments/assets/dfe1c2df-c42f-4f99-8361-260fb0fe0f20)
+
+![image](https://github.com/user-attachments/assets/6403fd0d-6a25-49fd-8138-2cc0996e0e9a)
 
 To do this we can inspect the source code as it is provided within the challenge. In the source code, we can see there is a check for the password in sub_3593
 
