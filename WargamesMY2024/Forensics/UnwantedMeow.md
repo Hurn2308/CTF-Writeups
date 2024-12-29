@@ -9,6 +9,7 @@ wgmy{4a4be40c96ac6314e91d93f38043a634}
 
 # Analysis
 First step was to analyze the hex of the file:
+
 ![image](https://github.com/user-attachments/assets/df36af4d-11fc-4d0d-b2d3-efb17e2a3a2b)
 
 
