@@ -14,6 +14,7 @@ My advice is to focus solely on the files related to the nginx configurations. T
 This is where the flag is stored, now the only question remains how do we get access to the endpoint and get the flag?
 
 If you try to curl the endpoint normally you will receive 403 forbidden access, so that means there's something we need to pass to gain access to the endpoint.
+
 ![image](https://github.com/user-attachments/assets/415402a0-0f82-4e66-b359-1fb691e13038)
 
 
