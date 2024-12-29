@@ -3,6 +3,7 @@ Uh.. Oh.. Help me, I just browsing funny cats memes, when I click download cute 
 
 # Flag
 wgmy{4a4be40c96ac6314e91d93f38043a634}
+
 ![image](https://github.com/user-attachments/assets/6b609a94-858b-414b-80d0-e42008ab7436)
 
 
@@ -17,6 +18,7 @@ Looking at it I noticed within the file there a lot of meows? This is certainly 
 
 # Solution
 To fix the file you can use cyberchef.
+
 ![image](https://github.com/user-attachments/assets/eb17a1fb-1c84-472a-a258-551607a799d8)
 
 
