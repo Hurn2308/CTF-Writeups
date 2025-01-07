@@ -46,7 +46,7 @@ from pwn import *
 
 # Set the target binary and address to use the buffer overflow
 # (Assuming you're running this locally or through a remote server)
-p = remote('babyflow.ctf.intigriti.io', 1331)  # Replace with actual binary path if needed
+p = remote('babyflow.ctf.intigriti.io', 1331)  
 
 # Craft the payload:
 # Password + padding to fill buffer + overwrite v5 with 1
