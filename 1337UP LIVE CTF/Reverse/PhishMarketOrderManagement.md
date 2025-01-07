@@ -56,7 +56,7 @@ _QWORD *__fastcall sub_34C9(_QWORD *a1)
 This function XOR's bytes from two buffers `unk_6C10` and `unk_6C20` within these two buffers is the data that can be used to decipher the password. To dump the data of these buffers you can use IDA. Search for the buffer.
 ![image](https://github.com/user-attachments/assets/526350a3-c1b2-4193-8c40-6bd20164c834)
 
-As we can see unk_6C10 is readable ascii but 6C20 is not but this doesn't matter as gpt can produce a script that uses the hex values like so:
+As we can see unk_6C10 is readable ascii but 6C20 is not but this doesn't matter as we can produce a script that uses the hex values like so:
 
 ```
 # Data from .rodata
