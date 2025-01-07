@@ -32,7 +32,7 @@ Now to figure out the padding you can take the first 8 bytes of the overflowed s
 
 ![image](https://github.com/user-attachments/assets/9e3d0e85-30de-49ac-a2f3-8285c794174a)
 
-Nice, now we know our padding is 24 bytes, which looks like this in our payload `A * 24` .  Next we need to find our pop rsi and pop rdi addresses, we can use the ropper tool for this. Simply, use the command `ropper --file retro2win --search "pop rsi" and ropper --file retro2win --search "pop rsi"` take the address starting from the 4 the 0's are irrelevant if you are using pwntools for your exploit. 
+Nice, now we know our padding is 24 bytes, which looks like this in our payload `A * 24` .  Next we need to find our pop rsi and pop rdi addresses, we can use the ropper tool for this. Simply, use the command `ropper --file retro2win --search "pop rsi" and ropper --file retro2win --search "pop rdi"` take the address starting from the 4 the 0's are irrelevant if you are using pwntools for your exploit. 
 
 ![image](https://github.com/user-attachments/assets/6fd3502a-c9c3-470f-8c2e-bcdffcbec2e9)
 
