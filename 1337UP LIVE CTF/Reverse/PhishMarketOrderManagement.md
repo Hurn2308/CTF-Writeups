@@ -98,7 +98,7 @@ I only realized this a bit later but seeing that the flag column value can't be 
 
 
 # Solution
-So the solution is to inject a payload that will replace the name value of the product table with the value of the flag. To do this I just asked GPT to generate the payload for me that will follow the criteria of the SQL database which was `' OR 1=1 UNION SELECT flag, 0 FROM admin; #`
+So the solution is to inject a payload that will replace the name value of the product table with the value of the flag. To do this we can create a payload that will follow the criteria of the SQL database which was `' OR 1=1 UNION SELECT flag, 0 FROM admin; #`
 
 ![image](https://github.com/user-attachments/assets/1edf0773-6ec6-4edf-9424-5c7a874061ea)
 
