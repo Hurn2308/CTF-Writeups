@@ -9,6 +9,7 @@ Author: vicevirus
 
 # Analysis
 Reading through the source code, I noticed that the /pokemon endpoint in index.js forwards the id parameter directly to the backend without any validation
+
 ![image](https://github.com/user-attachments/assets/231a5e48-ce73-41d8-9828-668711472830)
 
 This lack of validation allows a path traversal attack by setting id to something like ../actuator/env, which the backend interprets as a request to http://localhost:8080/actuator/env. The /actuator/env endpoint exposes all environment variables, potentially including sensitive data like a flag. In a properly secured application, access to Actuator endpoints would be restricted, but here, the path traversal bypasses any such protections. So now through the pokemon id parameter we can get path traversal bypass to access the actuator/env and get the flag information.
